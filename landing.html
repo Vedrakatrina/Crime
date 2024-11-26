@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/landing.css">
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="card">Total Crimes: <span id="total-users">1200</span></div>
+            <div class="card">Current Crime Rate: <span id="active-users">300</span></div>
+            <div class="card">New Crimes: <span id="new-registrations">150</span></div>
+        </section>
+        <section class="model">
+            <div class="cardmodel">Model: <span id="">model</span></div>
+        </section>
+        <section class="activity">
+            <h2>Recent Crimes</h2>
+            <ul id="activity-feed">
+                <li>November 1, 2024</li>
+                <li>October 4, 2024</li>
+                <li>September 5, 2024</li>
+            </ul>
+        </section>
+    </main>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

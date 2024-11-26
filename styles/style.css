@@ -1,0 +1,129 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full viewport setup */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; /* Dark background for a crime theme */
+}
+
+/* Main login page structure */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Header with dark theme */
+.login-header {
+    margin-bottom: 2rem;
+}
+
+.login-header h1 {
+    font-size: 3rem;
+    color: #ff4c4c; /* Red for a sense of urgency */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    font-size: 1.2rem;
+    color: #cccccc; /* Light gray for tagline text */
+}
+
+/* Login container for form styling */
+.login-container {
+    background-color: #2e2e2e; /* Dark gray background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #444444;
+    border-radius: 6px;
+    background-color: #3a3a3a; /* Darker input field */
+    color: #e6e6e6; /* Light text */
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #ff4c4c; /* Red border on focus */
+    box-shadow: 0 0 0 2px rgba(255, 76, 76, 0.2);
+}
+
+/* Log In button styling */
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4c4c; /* Red button color */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #cc3b3b; /* Darker red on hover */
+}
+
+/* Forgot Password link styling */
+.forgot-password {
+    display: block;
+    color: #4c9aff; /* Blue for link to stand out */
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Divider line */
+hr {
+    border: none;
+    border-top: 1px solid #555555; /* Darker gray for divider */
+    margin: 20px 0;
+}
+
+/* Create New Account button styling */
+.create-account {
+    width: 100%;
+    padding: 12px;
+    background-color: #4c9aff; /* Dark blue button */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-account:hover {
+    background-color: #3b7fcc; /* Darker blue on hover */
+}
